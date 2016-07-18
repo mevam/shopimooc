@@ -201,3 +201,13 @@ p.isHot,c.cName from imooc_pro as p join imooc_cate as c on p.cId=c.id where c.i
     $rows=fetchAll($sql);
     return $rows;
 }
+
+/**
+ * 得到商品id和名称
+ * @return array
+ */
+function getProInfo(){
+    $sql="select id,pName from imooc_pro order by id asc";
+    $rows=fetchAll($sql);
+    return $rows;
+}

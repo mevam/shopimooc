@@ -25,22 +25,25 @@
 
 <div class="regBox">
     <div class="login_cont">
-        <form action="doAction.php?act=reg" method="post" enctype="multipart/form-data">
-        <ul class="login">
-            <li><span class="reg_item"><i>*</i>用户名：</span><div class="input_item"><input type="text" name="username" placeholder="请输入用户名" class="login_input user_icon"></div></li>
-            <li><span class="reg_item"><i>*</i>密码：</span><div class="input_item"><input type="password" name="password" class="login_input user_icon"></div></li>
-            <li><span class="reg_item"><i>*</i>邮箱：</span><div class="input_item"><input type="email" name="email" placeholder="请输入合法的邮箱" class="login_input user_icon"></div></li>
-            <li><span class="reg_item"><i>*</i>性别：
-                </span><div class="input_item">
-                    <input type="radio" name="sex" value="1" checked>男
-                    <input type="radio" name="sex" value="2">女
-                    <input type="radio" name="sex" value="3">保密
-                </div>
-            </li>
-            <li><span class="reg_item"><i>*</i>头像：</span><div class="input_item"><input type="file" name="myFace"></div></li>
-            <li class="autoLogin"><span class="reg_item">&nbsp;</span><input type="checkbox" id="t1" class="checked"><label for="t1">我同意什么什么条款</label></li>
-            <li><span class="reg_item">&nbsp;</span><input type="image" src="images/reg.jpg"></li>
-        </ul>
+        <form method="post" enctype="multipart/form-data" action="doAction.php?act=reg" >
+            <ul class="login">
+                <li><span class="reg_item"><i>*</i>用户名：</span><div class="input_item"><input type="text"  name="username"  placeholder="请输入用户名" class="login_input user_icon" required="required"></div></li>
+                <li><span class="reg_item"><i>*</i>密码：</span><div class="input_item"><input type="password"  name="password"   class="login_input user_icon"required="required"></div></li>
+                <li><span class="reg_item"><i>*</i>邮箱：</span><div class="input_item"><input type="email" name="email" placeholder="请输入合法邮箱" class="login_input user_icon"required="required"></div></li>
+                <li><span class="reg_item"><i>*</i>性别：</span><div class="input_item">
+                        <input type="radio"  name="sex" value="1"> 男
+                        <input type="radio"  checked="checked" name="sex" value="2" > 女
+                        <input type="radio"  name="sex" value="3" > 保密
+                    </div></li>
+                <li><span class="reg_item"><i>*</i>头像：</span><div class="input_item"><input type="file"  name="myFace" ></div></li>
+                <li class="autoLogin"><span class="reg_item">&nbsp;</span><input type="checkbox" id="t1" class="checked">
+                    <label for="t1">我同意什么什么条款</label>
+                </li>
+                <li><span class="reg_item">&nbsp;</span>
+                    <button style="border:none;width:266px;height:35px;outline:none;">
+                        <img src="images/reg.jpg" alt="" />
+                    </button></li>
+            </ul>
         </form>
     </div>
 </div>

@@ -7,6 +7,7 @@
  */
 require_once "../include.php";
 $username=$_POST['username'];
+$username=mysql_real_escape_string($username);
 $password=md5($_POST['password']);
 $verify=$_POST['verify'];
 $sess_verify=$_SESSION['verify'];

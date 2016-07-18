@@ -9,7 +9,6 @@ require_once '../include.php';
 checkLogined();
 $act=$_REQUEST['act'];
 $id=@$_REQUEST['id'];
-var_dump($act);
 if ($act=="logout"){
     logout();
 }elseif ($act=="addAdmin"){
@@ -36,7 +35,6 @@ if ($act=="logout"){
 }elseif($act=="delUser"){
     $mes=delUser($id);
 }elseif($act=="editUser"){
-    var_dump($act);
     $mes=editUser($id);
 }
 ?>
